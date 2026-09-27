@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(bg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.max{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    padding: 20px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-size: large;
+}
+.icon{
+    font-size: 28px;
+}
+
+.continer{
+    display: flex;
+}
+.box{
+    width: 600px;
+    height: 350px;
+    margin: 50px;
+}
+.box>h1{
+    font-size: 78px;
+    color: white;
+}
+.box>h2{
+    font-size: 58px;
+    color: rgb(254, 254, 0);
+    font-family: "Playwrite CU Guides", cursive;
+}
+.box>p{
+    color: white;
+    font-size: 20px;
+}
+.explore{
+    margin: 50px 0px;
+    width: 150px;
+    padding: 10px;
+    background-color: rgb(255, 221, 0);
+    border-radius: 10px;
+    border: none;
+}
+.watch{
+    margin: 50px 0px;
+    width: 150px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.box2{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    top: 150px;
+    left: 450px;
+}
+.box2>h3{
+    display: inline;
+    background-color: yellow;
+    padding: 15px;
+    border-radius: 15px;
+    position: absolute;
+    left: 15px;
+    top: -25px;
+    
+}
+.box2>h1{
+    
+    color: rgb(11, 25, 114);
+}   
+.box2>h2{
+    color: rgb(19, 46, 222);
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+.box2>h2{
+    padding: 20px 0px;
+}
+.bx-stopwatch{
+    font-size: 25px;
+    color:blue;
+}
+span{
+    position: absolute;
+    top: 160px;
+    font-size: large;
+}
+#stopwatch{
+    position: absolute;
+    top: 188px;
+    right: 255px;
+}
+.All{
+    position: absolute;
+    top: 190px;
+    font-size: large;
+}
