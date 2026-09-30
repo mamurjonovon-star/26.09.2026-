@@ -1,0 +1,809 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(bg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.max{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    padding: 20px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-size: large;
+}
+li:active{
+    color: black;
+    cursor: pointer;
+}
+.icon{
+    font-size: 28px;
+    color: white;
+}
+
+.continer{
+    display: flex;
+}
+.box{
+    width: 600px;
+    height: 350px;
+    margin: 50px;
+}
+.box>h1{
+    font-size: 78px;
+    color: white;
+}
+.box>h2{
+    font-size: 58px;
+    color: rgb(254, 254, 0);
+    font-family: "Playwrite CU Guides", cursive;
+}
+.box>p{
+    color: white;
+    font-size: 20px;
+}
+.explore{
+    margin: 50px 0px;
+    width: 150px;
+    padding: 10px;
+    background-color: rgb(255, 221, 0);
+    border-radius: 10px;
+    border: none;
+}
+.explore:active{
+    background-color: #0022FF;
+    color: white;
+    cursor: pointer;
+}
+.watch{
+    margin: 50px 0px;
+    width: 150px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.watch:active{
+    background-color: white;
+    cursor: pointer;
+}
+.box2{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    top: 150px;
+    left: 450px;
+}
+.box2>h3{
+    display: inline;
+    background-color: yellow;
+    padding: 15px;
+    border-radius: 15px;
+    position: absolute;
+    left: 15px;
+    top: -25px;
+    
+}
+.box2>h1{
+    
+    color: rgb(11, 25, 114);
+}   
+.box2>h2{
+    color: rgb(19, 46, 222);
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+
+.box2>i{
+    display: flex;
+    
+}
+.booknow{
+    width: 100%;
+    padding: 15px;
+    margin: 18px 0px;
+    background-color: #091147;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.booknow:active{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+.From{
+    padding: 30px 0px 0px 0px;
+}
+.search-bar {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    max-width: 1350px;
+    width: 100%;
+    position: relative;
+    top: 110px;
+    left: 100px;
+  }
+  
+
+  .search-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 16px;
+    flex: 1;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  
+  .search-item:hover {
+    opacity: 0.8;
+  }
+  
+  .icon {
+    font-size: 1.2rem;
+    color: #1a2b49;
+  }
+  
+  .arrow-icon {
+    font-size: 0.8rem;
+    color: #1a2b49;
+    margin-left: auto;
+  }
+
+  .search-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .search-text label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin-bottom: 2px;
+  }
+  
+  .search-text span {
+    font-size: 0.8rem;
+    color: #8c98a4;
+  }
+  
+  .search-text input {
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    color: #8c98a4;
+    background: transparent;
+    width: 100%;
+  }
+  
+  .search-text input::placeholder {
+    color: #8c98a4;
+  }
+  
+  .divider {
+    width: 1px;
+    height: 32px;
+    background-color: #e0e6ed;
+  }
+  
+  .search-btn {
+    background-color: #0b1a48;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 8px;
+  }
+  
+  .search-btn:hover {
+    background-color: #162a66;
+  }
+  
+  @media (max-width: 850px) {
+    .search-bar {
+      flex-direction: column;
+      border-radius: 20px;
+      padding: 16px;
+    }
+  
+    .search-item {
+      width: 100%;
+      padding: 12px 0;
+    }
+  
+    .divider {
+      width: 100%;
+      height: 1px;
+    }
+  
+    .search-btn {
+      width: 100%;
+      justify-content: center;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  .cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    top: 150px;
+    
+  }
+  #card{
+    width: 230px;
+    height: 250px;
+    background-color: black;
+    border-radius: 20px; 
+    
+  }
+  .card1{
+    background-image: url(moldives.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+  .card1>h2{
+    color: white;
+    position: absolute;
+    top: 160px;
+    left: 35px;
+    font-size: 28px;
+  }
+  .card1>p{
+    color: white;
+    position: absolute;
+    top: 190px;
+    left: 35px;
+    font-size: small;
+  }
+  .card1>i{
+    color: rgb(255, 234, 0);
+    position: absolute;
+    top: 210px;
+    left: 35px;
+    font-size: small;
+  }
+  .card1>span{
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 50px;
+    font-size: small;
+  }
+  .card1>strong{
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 220px;
+    
+  }
+  .card2{
+    background-image: url(bora\ bors.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+  .card2>h2{
+    color: white;
+    position: absolute;
+    top: 160px;
+    left: 300px;
+    font-size: 28px;
+  }
+  .card2>p{
+    color: white;
+    position: absolute;
+    top: 190px;
+    left: 300px;
+    font-size: small;
+  }
+  .card2>i{
+    color: rgb(255, 234, 0);
+    position: absolute;
+    top: 210px;
+    left: 300px;
+    font-size: small;
+  }
+  .card2>span{
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    font-size: small;
+  }
+  .card2>strong{
+    color: white;
+    position: absolute;
+    top: 205px;
+    left: 460px;
+  }
+  .card3{
+    background-image: url(santorini.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+  .card3>h2{
+    color: white;
+    position: absolute;
+    top: 160px;
+    left: 560px;
+    font-size: 28px;
+  }
+  .card3>p{
+    color: white;
+    position: absolute;
+    top: 190px;
+    left: 560px;
+    font-size: small;
+  }
+  .card3>i{
+    color: rgb(255, 234, 0);
+    position: absolute;
+    top: 210px;
+    left: 560px;
+    font-size: small;
+  }
+  .card3>span{
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 580px;
+    font-size: small;
+  }
+  .card3>strong{
+    color: white;
+    position: absolute;
+    top: 205px;
+    left: 740px;
+  }
+  .card4{
+    background-image: url(dubai.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+  .card4>h2{
+    color: white;
+    position: absolute;
+    top: 160px;
+    left: 820px;
+    font-size: 28px;
+  }
+  .card4>p{
+    color: white;
+    position: absolute;
+    top: 190px;
+    left: 820px;
+    font-size: small;
+  }
+  .card4>i{
+    color: rgb(255, 234, 0);
+    position: absolute;
+    top: 210px;
+    left: 820px;
+    font-size: small;
+  }
+  .card4>span{
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 835px;
+    font-size: small;
+  }
+  .card4>strong{
+    color: white;
+    position: absolute;
+    top: 205px;
+    left: 990px;
+  }
+  .card5{
+    background-image: url(mexico.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+  .card5>h2{
+    color: white;
+    position: absolute;
+    top: 160px;
+    left: 1080px;
+    font-size: 28px;
+  }
+  .card5>p{
+    color: white;
+    position: absolute;
+    top: 190px;
+    left: 1080px;
+    font-size: small;
+  }
+  .card5>i{
+    color: rgb(255, 234, 0);
+    position: absolute;
+    top: 210px;
+    left: 1080px;
+    font-size: small;
+  }
+  .card5>span{
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 1100px;
+    font-size: small;
+  }
+  .card5>strong{
+    color: white;
+    position: absolute;
+    top: 205px;
+    left: 1250px;
+  }
+  .card6{
+    background-image: url(bali\ indonesia.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+  .card6>h2{
+    color: white;
+    position: absolute;
+    top: 160px;
+    left: 1340px;
+    font-size: 28px;
+  }
+  .card6>p{
+    color: white;
+    position: absolute;
+    top: 190px;
+    left: 1340px;
+    font-size: small;
+  }
+  .card6>i{
+    color: rgb(255, 234, 0);
+    position: absolute;
+    top: 210px;
+    left: 1340px;
+    font-size: small;
+  }
+  .card6>span{
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 1360px;
+    font-size: small;
+  }
+  .card6>strong{
+    color: white;
+    position: absolute;
+    top: 205px;
+    left: 1510px;
+  }
+  .bluecard{
+    position: relative;
+    top: 180px;
+    left: 40px;
+    width: 1500px;
+    height: 300px;
+    background-color: #0022FF;
+    border-radius: 20px;
+  }
+  .bluecard>h3{
+      padding: 7px;
+      text-align: center;
+      color: yellow;
+  }
+  .bluecard>h1{
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+    color: white;
+  }
+  .textcards{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  .textcard{
+    width: 250px;
+    /* height: 200px; */
+    /* background-color: grey; */
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+  }
+  .rasm>img{
+    width: 130px;
+    padding: 30px 2px;
+  }
+  .text{
+    padding: 10px;
+  }
+  .text>h4{
+    padding: 10px 0px;
+  }
+  .top{
+    position: absolute;
+    top: 1350px; 
+    left: 20px;
+  }
+  .setcards{
+    display: flex;
+    position: relative;
+    top: 300px;
+    gap: 50px;
+  }
+  .setcard{
+    width: 350px;
+    height: 350px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+  }
+  .setcard>img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+  }
+  .setcard>h2{
+    padding: 10px 10px;
+  }
+  .setcard>span{
+    padding-left: 270px;
+    font-size: 28px;
+    color:#091147;
+    font-weight: 700;
+  }
+  .setcard>p{
+    padding: 3px 10px;
+    font-size: 20px;
+  }
+iframe{
+  position: relative;
+  top: 350px;
+  padding: 0px 50px ;
+}
+.plans{
+  display: flex;
+  gap: 50px;
+  position: relative;
+  top: 400px;
+  left: 150px;
+}
+
+.planscard{
+  width: 350px;
+  height: 250px;
+  border: 2px solid black;
+  display: flex;
+  border-radius: 20px;
+}
+.planimg>img{
+  width: 180px;
+  height: 150px;
+  border-radius: 20px;
+
+}
+.planimg>p{
+  padding: 5px;
+}
+.planimg>h2{
+  padding: 5px;
+  font-size: 28px;
+  color: #091147;
+  font-weight:900;
+}
+.plantext>h2{
+  padding: 10px 0;
+
+}
+.pastki_qism {
+    width: 100%;
+    background: #061d46;
+    color: white;
+    font-family: Arial, sans-serif;
+    border-radius: 14px 14px 0 0;
+    overflow: hidden;
+    position: relative;
+    top: 450px;
+}
+
+.yangiliklar {
+    width: 92%;
+    margin: 0 auto;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+.yangiliklar_chap {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.xat_belgisi {
+    width: 45px;
+    height: 45px;
+    background: white;
+    color: #0b4aa2;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+}
+
+.yangiliklar h3 {
+    margin: 0 0 5px;
+    font-size: 16px;
+}
+
+.yangiliklar p {
+    margin: 0;
+    font-size: 12px;
+    color: #c7d3e8;
+}
+.obuna_qutisi {
+    display: flex;
+    align-items: center;
+}
+
+.pastki_asosiy {
+    width: 92%;
+    margin: 0 auto;
+    padding: 28px 0;
+    display: grid;
+    grid-template-columns:
+        1.5fr 1fr 1fr 1fr 1.3fr;
+    gap: 35px;
+}
+
+.haqida h2 {
+    margin: 0;
+    font-size: 23px;
+}
+.haqida span {
+    display: block;
+    margin-left: 30px;
+    margin-top: -3px;
+    font-size: 9px;
+    color: #aebdd5;
+}
+
+.haqida p {
+    width: 190px;
+    margin-top: 18px;
+    color: #b8c6dc;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+
+.ijtimoiy_tarmoqlar {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+.ijtimoiy_tarmoqlar a {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.12);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 12px;
+}
+.pastki_ustun {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.pastki_ustun h3 {
+    margin: 0 0 8px;
+    font-size: 13px;
+    color: white;
+}
+
+.pastki_ustun a {
+    color: #b9c7db;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.pastki_ustun a:hover {
+    color: white;
+}
+.aloqa p {
+    margin: 0;
+    color: #b9c7db;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.pastki_chegara {
+    width: 92%;
+    margin: 0 auto;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    text-align: center;
+    padding: 12px 0;
+}
+.pastki_chegara p {
+    margin: 0;
+    color: #aebbd0;
+    font-size: 10px;
+}
+
+@media (max-width: 700px) {
+    .yangiliklar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 20px 0;
+    }
+    .obuna_qutisi {
+        width: 100%;
+    }
+    .obuna_qutisi input {
+        width: 100%;
+    }
+    .pastki_asosiy {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .haqida {
+        grid-column: 1 / -1;
+    }
+}
+
+
